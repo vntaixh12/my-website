@@ -1,0 +1,25 @@
+body{
+    font-family: Arial;
+    background-color: rgb(227, 211, 182);
+    padding: 20px;
+}
+h1{
+    color: #3d1bd1;
+    text-align: center;
+}
+p{
+    line-height: 1.6;
+    max-width: 700px;
+}
+h2{
+    color: #c8d11b;
+    border-bottom: solid #0e56f2;
+}
+a{
+    color: #0000ff;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}

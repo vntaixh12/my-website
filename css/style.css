@@ -8,6 +8,7 @@ h1{
     text-align: center;
 }
 p{
+    color: #20136d;
     line-height: 1.6;
     max-width: 700px;
 }
@@ -20,6 +21,6 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #ff0000;
-    text-decoration: underline;
+    color: #1d6fa4;
+    text-decoration: none;
 }

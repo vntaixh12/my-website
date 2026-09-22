@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <title>Võ Anh Tài | Đại học Gia Định</title>
+    <meta name="decription" content="Porfolio cá nhân của Võ Anh Tài, sinh viên KTPM tại ĐH Gia Định. Kỹ năng HTML5, CSS3, JavaScript.">
+    
+    <meta name="author" content="Võ Anh Tài">
+    <meta name="keywords" content="portfolio, sinh vien, lap trinh web, HTML5, CSS3">
+    
+    <meta property="og:title" content="Võ Anh Tài - Porfolio">
+    <meta property="og:description" content="Portfolio cá nhân sinh viên ĐH Gia Định">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <h1>Liên hệ với tôi</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Liên hệ với tôi</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                    <label for="fullname">Họ và tên: *</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Nhập họ tên đầy đủ" required minlength="2">
+                    <label for="email">Email: *</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    <label for="phone">SĐT: *</label>
+                    <input type="tel" name="phone" id="phone" placeholder="09xx xxx xxx" pattern="[0-9]{10,11}">
+                    <label for="dob">Ngày sinh: *</label>
+                    <input type="date" name="dob" id="dob" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Nội dung liên hệ</legend>
+                    <label for="subject">Chủ đề</label>
+                    <select name="subject" id="subjet">
+                        <option value="">-- Chọn chủ đề --</option>
+                        <option value="support">Hỗ trợ kĩ thuật</option>
+                        <option value="study">Học tập/trao đổi</option>
+                        <option value="other">Khác</option>
+                    </select>
+                    <label>Ưu tiên liên hệ qua:</label>
+                    <fieldset>
+                        <legend>Kênh liên hệ</legend>
+                        <input type="radio" name="via-email" id="contact-via" value="email" checked>
+                        <label for="via-email">Email</label>
+                        <input type="radio" name="via-phone" id="contact-via" value="phone">
+                        <label for="via-phone">Điện thoại</label>
+                        <input type="radio" name="via-zalo" id="contact-via" value="zalo">
+                        <label for="via-zalo">Zalo</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Trường đại học</legend>
+                        <label for="uni">Trường: *</label>
+                        <input list="univer" name="uni" id="uni">
+                        <datalist id="univer">
+                            <option value="">-- Chọn --</option>
+                            <option value="Đại học Quốc gia Hà Nội">
+                            <option value="Đại học Bách Khoa Hà Nội">
+                            <option value="Đại học Kinh tế TP.HCM">
+                            <option value="Đại học Sư phạm TP.HCM">
+                        </datalist>
+                    </fieldset>
+                    <label for="message">Tin nhắn: *</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Nhập nội dung tin nhắn... " required minlength="10" maxlength="500"></textarea>
+                    <label>
+                        <input type="checkbox" name="agree" required>
+                        Tôi đồng ý với<a href="#">Điều khoản sử dụng</a> *
+                    </label>
+                </fieldset>
+                <button type="submit">Gửi tin nhắn</button>
+                <button type="reset">Xóa và nhập lại</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p>Email: <a href="mailto:vovanhtai@example.com">vovanhtai@example.com</a></p>
+            <p>Điện Thoại: <a href="tel:+84123456789">+84 123 456 789</a></p>
+        </address>
+        <p>Bản quyền &amp; &copy; 2026</p>
+    </footer>
+</body>
+</html>

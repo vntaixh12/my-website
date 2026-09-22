@@ -1,26 +1,45 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
-    font-family: Arial;
-    background-color: rgb(227, 211, 182);
-    padding: 20px;
-}
-h1{
-    color: #3d1bd1;
-    text-align: center;
-}
-p{
-    color: #20136d;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
     line-height: 1.6;
-    max-width: 700px;
 }
-h2{
-    color: #c8d11b;
-    border-bottom: solid #0e56f2;
+header{
+    background-color: #1a2e5a;
+    padding: 16px 32px;
+    color: white;
 }
-a{
-    color: #0000ff;
+header h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav a{
+    color: #93c5fd;
+    margin-left: 20px;
     text-decoration: none;
 }
-a:hover{
-    color: #1d6fa4;
-    text-decoration: none;
+header nav a:hover{
+    color: white;
+}
+main{
+    max-width: 800px;
+    margin: 0;
+    padding: 32px 16px;
+}
+.card{
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+footer{
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 24px;
 }

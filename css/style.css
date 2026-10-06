@@ -55,6 +55,11 @@ footer{
     font-weight: bold;
     color: white;
 }
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 .nav-links a {
     color: #93c5fd;
     margin-left: 20px;
@@ -104,4 +109,90 @@ footer{
 }
 .btn-primary:hover {
     background-color: #e2e8f0;
+}
+.page-layout {
+    display: grid;
+    grid-template-areas:
+        "sidebar"
+        "main";
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.page-layout > .sidebar {
+    grid-area: sidebar;
+}
+.page-layout > main {
+    grid-area: main;
+}
+.sidebar {
+    display: none;
+    background-color: #f1f5f9;
+    padding: 24px;
+    border-radius: 8px;
+    align-self: start;
+}
+.sidebar h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #1a2e5a;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #1d6fa4;
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+.skill-card {
+    background-color: white;
+    padding: 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #1d6fa4;
+}
+@media (min-width: 768px) {
+    .page-layout {
+        grid-template-areas: "sidebar main";
+        grid-template-columns: 180px 1fr;
+    }
+    .sidebar {
+        display: block;
+    }
+    .nav-links {
+        flex-direction: row;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .page-layout {
+        grid-template-areas: "sidebar main";
+        grid-template-columns: 240px 1fr;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media (max-width: 480px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }

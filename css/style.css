@@ -165,6 +165,56 @@ footer{
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     border-left: 4px solid #1d6fa4;
 }
+.shop-section {
+    display: grid;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.shop-section > h2,
+.cart h3 {
+    color: #1a2e5a;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+    list-style: none;
+}
+.product-card,
+.cart {
+    display: grid;
+    align-content: start;
+    gap: 12px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.product-card h3 {
+    color: #1a2e5a;
+}
+.product-card button,
+.cart button {
+    justify-self: start;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #1d6fa4;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+.product-card button:hover,
+.cart button:hover {
+    background-color: #1a2e5a;
+}
+.cart-list {
+    display: grid;
+    gap: 8px;
+    padding-left: 20px;
+}
 @media (min-width: 768px) {
     .page-layout {
         grid-template-areas: "sidebar main";

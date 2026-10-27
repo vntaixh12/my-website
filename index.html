@@ -70,6 +70,19 @@
             </div>
         </div>
     </main>
+    <section class="shop-section" aria-labelledby="shop-title">
+        <h2 id="shop-title">Cửa hàng sản phẩm</h2>
+        <ul id="product-list" class="product-grid"></ul>
+
+        <div class="cart" aria-labelledby="cart-title">
+            <h3 id="cart-title">Giỏ hàng</h3>
+            <p id="cart-status" role="status" aria-live="polite"></p>
+            <ul id="cart-list" class="cart-list"></ul>
+            <p>Số lượng sản phẩm: <strong id="cart-count">0</strong></p>
+            <p>Tổng tiền: <strong id="cart-total">0 ₫</strong></p>
+            <button id="clear-cart" type="button">Xóa giỏ hàng</button>
+        </div>
+    </section>
     <h2>Thông tin cá nhân</h2>
     <strong>Võ Anh Tài  </strong>
     <p>Quảng Ngãi, CNNT-Kỹ thuật phần mềm, 2026</p>
@@ -85,6 +98,33 @@
         <li>Tham gia các hoạt động ngoại khóa</li>
         <li>Phát triển kỹ năng lập trình</li>
     </ol>
+    <section class="api-exercise" aria-labelledby="api-exercise-title">
+        <h2 id="api-exercise-title">Bài tập: Fetch API &amp; async/await</h2>
+        <p id="api-status" role="status" aria-live="polite">Đang tải người dùng và bài viết...</p>
+        <button id="api-retry" type="button" hidden>Tải lại dữ liệu</button>
+        <div id="api-content" hidden>
+            <section aria-labelledby="users-title">
+                <h3 id="users-title">Danh sách người dùng</h3>
+                <ul id="user-list"></ul>
+            </section>
+            <section aria-labelledby="posts-title">
+                <h3 id="posts-title">Danh sách bài viết</h3>
+                <ul id="posts-list"></ul>
+            </section>
+            <section aria-labelledby="post-form-title">
+                <h3 id="post-form-title">Tạo bài viết</h3>
+                <form id="postForm">
+                    <label for="title">Tiêu đề *</label>
+                    <input id="title" name="title" type="text" required maxlength="120">
+                    <label for="body">Nội dung *</label>
+                    <textarea id="body" name="body" rows="5" required></textarea>
+                    <button type="submit">Gửi bài viết</button>
+                </form>
+                <p id="postStatus" role="status" aria-live="polite"></p>
+                <div id="postResult"></div>
+            </section>
+        </div>
+    </section>
     <footer>
         <address>
             <p>Email: <a href="mailto:vovanhtai@example.com">vovanhtai@example.com</a></p>
@@ -93,5 +133,6 @@
         <p>Bản quyền &amp; &copy; 2026</p>
         <time datetime="2026-06-01">2026-06-01</time>
     </footer>
+    <script src="js/async-demo.js" defer></script>
 </body>
 </html>
